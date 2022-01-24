@@ -17,6 +17,7 @@ $(document).ready(function () {
   const twitter = $("#twitter");
   const work = $("#work");
 
+
   //Load the page with Octocat account loaded
   $.getJSON("https://api.github.com/users/octocat", function (result) {
     if (!result) {
