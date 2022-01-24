@@ -36,6 +36,8 @@ $(document).ready(function () {
   //Dark/light mode toggle function
   //Done through simple "dark mode " class to the body
   toggle.click(function (e) {
+    let state = toggle.text().trim().toLowerCase();
+    state == 'dark'? toggle.text('light'):toggle.text('dark') ;
     $("body").toggleClass("light-theme");
   });
   //Get JSON from Github function
