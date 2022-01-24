@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+
+  <title>Frontend Mentor | GitHub user search app</title>
+  <script src="https://kit.fontawesome.com/8805e0edcd.js" crossorigin="anonymous"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./normalize.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div class="main" role="main">
+    <header class="header">
+      <h1 class="main-logo">devfinder</h1>
+      <div class="mode-toggle" id="toggle">light</div>
+    </header>
+    <div class="search-box">
+      <input type="text" class="search" id="search" placeholder="Search GitHub username">
+      <div class="error" id="error">No results</div>
+      <input type="button" value="Search" class="search-btn" id="search-btn">
+    </div>
+    <div class="display">
+      <div class="user">
+        <div class="user--avatar"> <img src="./assets/avatar.svg" alt="user avatar" id="avatar"></div>
+
+        <div class="user--info">
+          <div class="name" id="name">The Octocat</div>
+          <span class="nickname" id="nickname">@octocat</span>
+          <span class="date" id="date">Joined 25 Jan 2011</span>
+        </div>
+        <div class="user--description" id="description">Lorem ipsum dolor sit amet consectetur. Nulla laboriosam modi
+          deserunt optio voluptas.</div>
+      </div>
+      <div class="socials">
+        <div class="social">
+          <div class="social-name">Repos</div>
+          <div class="social-amount social-amount__repos" id="repos-amount">8</div>
+        </div>
+        <div class="social">
+          <div class="social-name">Followers</div>
+          <div class="social-amount social-amount__followers" id="followers-amount">3938</div>
+        </div>
+        <div class="social">
+          <div class="social-name">Following</div>
+          <div class="social-amount social-amount__following" id="following-amount">9</div>
+        </div>
+      </div>
+      <div class="links">
+        <div class="link link__city"><i class="fas fa-map-marker-alt"></i> <span id="city"> San Francisco</span> </div>
+        <div class="link link__blog"><i class="fas fa-link"></i> <span id="blog">
+            https://github.blog</span> </div>
+        <div class="link link__twitter"> <i class="fab fa-twitter"></i> <span id="twitter" class="not-available"> Not
+            Available</span></div>
+        <div class="link link__work"><i class="fas fa-building"></i> <span id="work"> @github</span> </div>
+      </div>
+    </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+
+</html>
