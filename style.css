@@ -10,6 +10,8 @@ html {
 }
 
 body {
+  -webkit-transition: background .3s ease-in-out;
+  transition: background .3s ease-in-out;
   font-family: "Space Mono", monospace;
   min-width: 250px;
   min-height: 100%;
@@ -83,6 +85,7 @@ body.light-theme .main-logo {
 .mode-toggle {
   color: #ffffff;
   text-transform: uppercase;
+  padding: 1rem;
   font-size: 0.813rem;
   font-weight: 700;
   text-align: right;
@@ -132,6 +135,28 @@ body.light-theme .mode-toggle::after {
   text-align: left;
   position: relative;
   padding-left: 3.4rem;
+}
+
+.search::-webkit-input-placeholder {
+  -webkit-user-select: none;
+          user-select: none;
+}
+
+.search:-ms-input-placeholder {
+  -ms-user-select: none;
+      user-select: none;
+}
+
+.search::-ms-input-placeholder {
+  -ms-user-select: none;
+      user-select: none;
+}
+
+.search::placeholder {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 body.light-theme .search {
@@ -264,6 +289,10 @@ body.light-theme .display {
   gap: 1.45rem 1.25rem;
 }
 
+.user::-webkit-scrollbar-track {
+  display: none;
+}
+
 .user--avatar {
   max-width: 30%;
 }
@@ -318,7 +347,6 @@ body.light-theme .name {
 .user--description {
   font-size: 0.813rem;
   font-weight: 400;
-  line-height: 25px;
   text-align: left;
 }
 
@@ -526,8 +554,7 @@ body.light-theme .social-amount {
   }
   .user--description {
     max-width: 75%;
-    max-height: 35%;
-    overflow: scroll;
+    max-height: 45%;
   }
   .user--avatar {
     max-width: 19%;

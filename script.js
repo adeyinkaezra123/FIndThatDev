@@ -109,7 +109,7 @@ $(document).ready(function () {
       appendix = what;
       av = "available";
     } else {
-      //  Add styling of not available info
+      //  Add styling of not available in
       where.addClass(`${av}`);
     }
     where.append(appendix);

@@ -24,6 +24,7 @@ html {
   font-size: 16px;
 }
 body {
+  transition: background .3s ease-in-out;
   font-family: "Space Mono", monospace;
   min-width: 250px;
   min-height: 100%;
@@ -74,6 +75,7 @@ body.light-theme .main-logo {
 .mode-toggle {
   color: $full-white;
   text-transform: uppercase;
+  padding: 1rem;
   font-size: 0.813rem;
   font-weight: 700;
   text-align: right;
@@ -117,8 +119,11 @@ body.light-theme .mode-toggle::after {
   font-weight: 400;
   text-align: left;
   position: relative;
-
   padding-left: 3.4rem;
+}
+.search::placeholder{
+  user-select: none;
+  
 }
 body.light-theme .search {
   background-color: $white;
@@ -178,6 +183,7 @@ body.light-theme .search::placeholder {
 }
 //DISPLAY SECTION
 .display {
+ 
   padding: 32px 24px 48px;
   background: $dark-asphalt;
   border-radius: 15px;
@@ -200,6 +206,9 @@ body.light-theme .display {
   flex-direction: row;
   flex-wrap: wrap;
   gap: 1.45rem 1.25rem;
+}
+.user::-webkit-scrollbar-track {
+  display: none;
 }
 .user--avatar {
   max-width: 30%;
@@ -238,7 +247,7 @@ body.light-theme .name {
 .user--description {
   font-size: 0.813rem;
   font-weight: 400;
-  line-height: 25px;
+
   text-align: left;
 }
 //socials
@@ -396,8 +405,9 @@ body.light-theme .social-amount {
   }
   .user--description {
     max-width: 75%;
-    max-height: 35%;
-    overflow: scroll;
+    max-height: 45%;
+    // overflow-y: scroll;
+    // overflow-x: hidden !important;
   }
   .user--avatar {
     max-width: 19%;
