@@ -20,5 +20,5 @@ sent along in any API calls to increase the limit:
 
 ## TODO
 - [x] Update UI
-- [] Service worker
-- [] Search by Keyword
+- [ ] Service worker
+- [ ] Search by Keyword
